@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *.ipynb_checkpoints
 
-# Data and models
-*.pkl
-
 
 # Jupyter Notebook metadata
 .ipynb_checkpoints
