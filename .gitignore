@@ -1,2 +1,13 @@
-venv
-similarity.pkl
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Data and models
+*.pkl
+data/similarity.pkl
+data/movies_dict.pkl
+data/movies.pkl
+
+# Jupyter Notebook metadata
+.ipynb_checkpoints
