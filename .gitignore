@@ -5,9 +5,7 @@ __pycache__/
 
 # Data and models
 *.pkl
-data/similarity.pkl
-data/movies_dict.pkl
-data/movies.pkl
+
 
 # Jupyter Notebook metadata
 .ipynb_checkpoints
