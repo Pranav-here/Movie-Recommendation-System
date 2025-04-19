@@ -1,15 +1,15 @@
 
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 
 This project is a **content-based movie recommender system** built with **Streamlit**. It recommends similar movies based on a selected title and displays their poster images by integrating with **The Movie Database (TMDb) API**.
 
 ---
 
-## 🔍 How It Works
+##  How It Works
 
 The system uses precomputed **cosine similarity** between movie metadata (tags) to recommend 5 similar movies to the user-selected title.
 
-### 💡 Core Logic:
+### Core Logic:
 - Movie metadata is combined into tags (overview, cast, crew, genres).
 - Tags are stemmed and vectorized using `CountVectorizer`.
 - Cosine similarity is computed and stored.
@@ -17,7 +17,7 @@ The system uses precomputed **cosine similarity** between movie metadata (tags) 
 
 ---
 
-## 📦 File Structure
+## File Structure
 
 ```
 Movie-Recommender-System/
@@ -40,9 +40,9 @@ Movie-Recommender-System/
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
-### 🔧 Setup
+### Setup
 
 1. **Install dependencies**  
    Make sure Python ≥ 3.8 is installed.
@@ -62,7 +62,7 @@ Movie-Recommender-System/
 
 ---
 
-## 🔑 API Configuration
+## API Configuration
 
 This project uses the **TMDb API** to fetch movie posters.
 
@@ -75,9 +75,9 @@ url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_API_KEY"
 
 ---
 
-## 🧠 Core Components
+## Core Components
 
-### 🛠️ Dependencies
+###  Dependencies
 
 | Library      | Purpose                          |
 |--------------|----------------------------------|
@@ -89,7 +89,7 @@ url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_API_KEY"
 | `nltk`       | Text stemming                    |
 | `pickle`     | Save/load processed data         |
 
-### 📊 Preprocessing Steps
+### Preprocessing Steps
 
 - Top 3 cast names extracted
 - Only director extracted from crew
@@ -100,7 +100,7 @@ url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_API_KEY"
 
 ---
 
-## ⚙️ Caching & Performance
+## Caching & Performance
 
 ```python
 @st.cache_data
@@ -110,7 +110,7 @@ def load_data():
 
 ---
 
-## 📈 Visualization Layout
+##  Visualization Layout
 
 ```python
 col1, col2, col3, col4, col5 = st.columns(5)
@@ -119,7 +119,7 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 ---
 
-## 🔥 Future Enhancements
+##  Future Enhancements
 
 - [ ] Async image fetching for faster poster loading
 - [ ] Error handling for missing TMDb data
@@ -128,20 +128,20 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - `similarity.pkl` is a large file and is excluded from GitHub with `.gitignore`.
 - You can use Google Drive or Git LFS to manage large binary files.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 🤝 Acknowledgments
+## Acknowledgments
 
 - TMDb API for poster image support
 - scikit-learn & NLTK for core ML components
