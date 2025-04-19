@@ -34,10 +34,12 @@ def recommend(movie):
 
 
 # movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
-movies = pd.DataFrame(movies_dict)
+
 
 with open(os.path.join(DATA_PATH, 'movies_dict.pkl'), 'rb') as f:
     movies_dict = pickle.load(f)
+
+movies = pd.DataFrame(movies_dict)
 
 with open(os.path.join(DATA_PATH, 'similarity.pkl'), 'rb') as f:
     similarity = pickle.load(f)
